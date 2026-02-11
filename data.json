@@ -1,0 +1,10 @@
+[
+  { "company": "TechCorp", "country": "USA", "co2": 4500 },
+  { "company": "AutoWorks", "country": "Deutschland", "co2": 12000 },
+  { "company": "GreenEnergy", "country": "Norwegen", "co2": 800 },
+  { "company": "SteelGmbH", "country": "Deutschland", "co2": 25000 },
+  { "company": "ChinaExport", "country": "China", "co2": 30000 },
+  { "company": "LaMode", "country": "Frankreich", "co2": 3200 },
+  { "company": "DesertOil", "country": "Saudi Arabien", "co2": 50000 },
+  { "company": "EcoFoods", "country": "Brasilien", "co2": 6000 }
+]

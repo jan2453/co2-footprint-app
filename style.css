@@ -1,0 +1,62 @@
+/* RTL Unterstützung für Alerts */
+[dir="rtl"] .alert {
+    text-align: right;
+}
+
+/* Layout-Stabilität gegen CLS (Lighthouse) */
+main.container {
+    min-height: 600px; /* Verhindert das Springen des Footers beim Laden der Daten */
+}
+
+/* Grundlegendes Styling */
+body {
+    background-color: #f4f7f6;
+    transition: direction 0.3s ease;
+}
+
+/* Header & Logo */
+.navbar-brand img {
+    border-radius: 50%;
+    margin-inline-end: 10px; /* Nutzt logische Properties für RTL/LTR Kompatibilität */
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Tabellen-Optimierung */
+.table {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #e9ecef !important;
+    user-select: none;
+    transition: background-color 0.2s;
+}
+
+th:hover {
+    background-color: #dee2e6 !important;
+}
+
+/* Lokales Menü */
+.list-group-item.active {
+    background-color: #146c43; /* Dunkleres Grün für besseren Kontrast (Lighthouse) */
+    border-color: #146c43;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid #dee2e6;
+    color: #6c757d;
+}
+
+footer a {
+    color: #495057;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
