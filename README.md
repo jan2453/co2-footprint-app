@@ -4,6 +4,8 @@ Eine professionelle Webanwendung zur Transparenz von globalen CO2-Emissionsdaten
 
 ## 🚀 Features
 
+### Logo & Design
+Das Projekt verwendet ein modernes, realistisches Blattlogo (SVG) in dem zentralen Klima-Grün (#198754). Das Farbschema basiert auf diesem lebendigen Grünton für aktive Elemente und einem klassischen dunklen Header (bg-dark) für eine professionelle Anmutung.
 - **Interaktive Datentabelle:** Sortierung und Filterung von Emissionsdaten in Echtzeit.
 - **Responsive Design:** Optimierte Darstellung für Desktop, Tablet und Smartphone (Bootstrap 5).
 - **Multikulturelle Unterstützung (RTL/LTR):** Dynamische Umschaltung des Layouts für Rechts-nach-Links-Schriftkulturen (z.B. Arabisch, Hebräisch).

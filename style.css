@@ -12,6 +12,12 @@ main.container {
 body {
     background-color: #f4f7f6;
     transition: direction 0.3s ease;
+    /* Optimierung der Schriftwiedergabe gegen Unschärfe */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    line-height: 1.6;
 }
 
 /* Header & Logo */
@@ -41,8 +47,8 @@ th:hover {
 
 /* Lokales Menü */
 .list-group-item.active {
-    background-color: #146c43; /* Dunkleres Grün für besseren Kontrast (Lighthouse) */
-    border-color: #146c43;
+    background-color: #198754; /* Ursprüngliches Klima-Grün */
+    border-color: #198754;
     color: #fff;
 }
 
