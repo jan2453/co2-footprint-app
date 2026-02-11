@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO2 Footprint Tracker</title> <!-- Titel -->
+    <!-- Bootstrap CSS einbinden (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Header mit Logo und Globaler Navigation -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://via.placeholder.com/30" alt="Logo" class="d-inline-block align-text-top"> <!-- Anforderung a: Logo -->
+                CO2 Tracker
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Über uns</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Daten</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="container mt-4">
+    <!-- Lokales Menü & LTR/RTL Umschalter -->
+    <div class="row mb-4">
+        <div class="col-md-3">
+            <div id="local-menu" class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active">Dashboard</a>
+                <a href="#" class="list-group-item list-group-item-action">Einstellungen</a>
+                <a href="#" class="list-group-item list-group-item-action">Export</a>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <h1>CO2 Emissionen Übersicht</h1>
+
+            <!-- Steuerung für Schriftkultur (RTL/LTR) -->
+            <div class="mb-3">
+                <button class="btn btn-outline-secondary" onclick="toggleDirection('ltr')">LTR (Westlich)</button>
+                <button class="btn btn-outline-secondary" onclick="toggleDirection('rtl')">RTL (Arabisch/Hebräisch)</button>
+            </div>
+
+            <!-- Filter & Tabelle -->
+            <div class="input-group mb-3">
+                <span class="input-group-text">Suche</span>
+                <input type="text" id="searchInput" class="form-control" placeholder="Land oder Unternehmen filtern...">
+            </div>
+
+            <table class="table table-striped table-hover">
+                <thead>
+                <tr>
+                    <th onclick="sortTable('company')" style="cursor:pointer">Unternehmen ↕</th>
+                    <th onclick="sortTable('country')" style="cursor:pointer">Land ↕</th>
+                    <th onclick="sortTable('co2')" style="cursor:pointer">CO2 (Tonnen) ↕</th>
+                </tr>
+                </thead>
+                <tbody id="tableBody">
+                <!-- Hier werden Daten per JS eingefügt -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-light text-center text-lg-start mt-5 p-3">
+    <div class="text-center">
+        © 2026 Copyright: Non-Profit CO2 Org | <a href="#">Impressum</a> | <a href="#">Datenschutz</a>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
